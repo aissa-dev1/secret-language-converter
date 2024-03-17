@@ -1,0 +1,44 @@
+.main-nav {
+  @include flexCol;
+  gap: 8px;
+  background-color: #fff;
+  padding: 16px 24px;
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+
+    .author {
+      font-weight: bold;
+      color: #666;
+    }
+
+    .date {
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main-nav {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  .main-nav {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}

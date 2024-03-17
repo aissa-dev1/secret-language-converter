@@ -1,0 +1,12 @@
+.container .help-page .welcome-texts {
+  @include flexRow;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    @include styledBtn;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+}

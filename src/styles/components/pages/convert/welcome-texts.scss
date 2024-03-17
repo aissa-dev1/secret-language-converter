@@ -1,0 +1,21 @@
+.container .convert-page .welcome-texts {
+  @include flexCol;
+  gap: 8px;
+
+  p:first-child {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  p:nth-child(2) {
+    font-size: 15px;
+    font-weight: bold;
+
+    button {
+      @include styledBtn;
+      background-color: #fff;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+  }
+}

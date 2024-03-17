@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.scss" />
+    <title>Secret Language Converter</title>
+  </head>
+  <body>
+    <nav class="main-nav">
+      <h3>Secret Language Converter</h3>
+
+      <p>By <span class="author">Aissa Bedr</span> at - <span class="date">3/15/@2024</span> -</p>
+    </nav>
+
+    <main class="container">
+      <header class="page convert-page hidden">
+        <section class="welcome-texts">
+          <p>Hello, you can only convert text in the current version!</p>
+
+          <p>Need some help? <button class="to-help-page">click here</button></p>
+        </section>
+
+        <section class="converter">
+          <div class="input">
+            <div class="actions">
+              <button class="i-language-btn" data-language="Secret">Secret</button>
+
+              <button class="i-language-btn active" data-language="English">English</button>
+            </div>
+
+            <input type="text" id="convert_text_input" placeholder="Type something here..." />
+          </div>
+
+          <div class="output">
+            <div class="actions">
+              <div>
+                <button class="o-language-btn" data-language="English">English</button>
+
+                <button class="o-language-btn active" data-language="Secret">Secret</button>
+              </div>
+
+              <button id="copy_converted_text_btn" class="copy_btn">Copy</button>
+            </div>
+
+            <p id="converted_text_elm">Hello world!</p>
+          </div>
+        </section>
+      </header>
+
+      <header class="page help-page hidden">
+        <section class="welcome-texts">
+          <h3>Language Converter Help Page</h3>
+
+          <button class="to-convert-page">Back</button>
+        </section>
+
+        <section class="rules">
+          <div class="rule">
+            <div class="texts">
+              <h2>English Language to Secret</h2>
+
+              <p>To convert from English Language to Secret, use the following rules:</p>
+            </div>
+
+            <ul>
+              <li><code>a</code> converts to <code>0</code></li>
+              <li><code>j</code> converts to <code>9</code></li>
+              <li>And so on, same thing to others...</li>
+              <li><code>k</code> converts to <code>^10</code></li>
+              <li><code>l</code> converts to <code>^11</code></li>
+              <li>And so on, same thing to others...</li>
+              <li><code>z</code> converts to <code>^25</code></li>
+            </ul>
+          </div>
+
+          <div class="rule">
+            <div class="texts">
+              <h2>Secret Language to English</h2>
+
+              <p>To convert from Secret Language to English, use the following rules:</p>
+            </div>
+
+            <ul>
+              <li><code>0</code> converts to <code>a</code></li>
+              <li><code>9</code> converts to <code>j</code></li>
+              <li>And so on, same thing to others...</li>
+              <li><code>^10</code> converts to <code>k</code></li>
+              <li><code>^11</code> converts to <code>l</code></li>
+              <li>And so on, same thing to others...</li>
+              <li><code>^25</code> converts to <code>z</code></li>
+            </ul>
+          </div>
+        </section>
+      </header>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

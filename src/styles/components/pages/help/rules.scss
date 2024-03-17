@@ -1,0 +1,56 @@
+.container .help-page .rules {
+  display: grid;
+  gap: 8px;
+  margin-top: 8px;
+
+  .rule {
+    @include flexCol;
+    gap: 8px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+
+    .texts {
+      @include flexCol;
+      gap: 4px;
+
+      p {
+        font-weight: 600;
+      }
+    }
+
+    ul {
+      @include flexCol;
+      gap: 3px;
+      list-style-type: none;
+
+      li {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container .help-page .rules {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container .help-page .rules {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  .container .help-page .rules {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,81 @@
+.container .convert-page .converter {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+
+  .input,
+  .output {
+    @include flexCol;
+    gap: 16px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    .actions {
+      @include flexRow;
+      gap: 8px;
+
+      button {
+        @include styledBtn;
+        padding: 6px 16px;
+        border-radius: 4px;
+        transition-duration: 500ms;
+        border: 1px solid transparent;
+
+        &.active {
+          background-color: #fff;
+          border-color: #333;
+        }
+      }
+
+      .copy_btn {
+        font-weight: bold;
+        transition-duration: 0 !important;
+
+        &:active {
+          transform: scale(0.85);
+        }
+      }
+    }
+  }
+
+  .input {
+    input {
+      border: 1px solid #333;
+      outline: none;
+      padding: 6px 4px;
+      border-radius: 4px;
+    }
+  }
+
+  .output {
+    .actions {
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container .convert-page .converter {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container .convert-page .converter {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+  .container .convert-page .converter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}

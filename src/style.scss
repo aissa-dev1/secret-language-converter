@@ -1,0 +1,15 @@
+@import "./styles/mixins/mixins.scss";
+@import "./styles/components/components.scss";
+@import "./styles/classes.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  color: #333;
+  font-family: system-ui;
+}
